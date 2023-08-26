@@ -1,0 +1,21 @@
+.conceptBtn {
+    font-size: 14px;
+    font-family: 'Geometria';
+    color: $theme1;
+    transition: all ease-in-out 0.3s;
+    & span {
+        width: 10px;
+        & img {
+            object-fit: contain;
+            transform: rotate(-45deg);
+            transition: all ease-in-out 0.3s;
+        }
+    }
+    &:hover{
+        & span {
+            & img {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}

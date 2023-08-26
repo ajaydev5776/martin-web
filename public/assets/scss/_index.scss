@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+// * tastemakerssection Start
+.sectionheading {
+    color: $gray-600;
+}
+.textcontent ,  .sectionheading{
+    font-size: 22px;
+    line-height: 150%;
+    color: $theme1;
+}
+.textcontent {
+    opacity: 0.8;
+}
+
+// * tastemakerssection End
+
+
+// * ethosSection
+.ethosSection {
+    & .innersection{
+        & .ethosImg {
+            margin-bottom: -4rem;
+        }
+    }
+}
+// * ethosSection
+
+
+
+// * That Count Section
+.thatcountFunction {
+    & .innerfluid {
+        background: url(../img/facilitiesBack.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+// * That Count Section
+
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    
+.textcontent ,  .sectionheading{
+        font-size: 18px;
+    }
+}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+.textcontent ,  .sectionheading{
+        font-size: 16px;
+    }
+    // * ethosSection
+.ethosSection {
+    overflow: hidden;
+    padding-right: 0px;
+    & .innersection{
+    padding-right: 0px;
+        & .ethosImg {
+            margin-bottom: 0rem;
+        }
+    }
+}
+// * ethosSection
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}

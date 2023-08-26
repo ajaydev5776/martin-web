@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+.serviceCard {
+    // max-height: 400px;
+    & .cardImg {
+        & img {
+            object-fit: cover;
+        }
+    }
+    & .title {
+        bottom: -15px;
+        left: -15px;
+        line-height: 100%;
+        font-weight: 300;
+        font-size: 4.2vw;
+        color: rgba($white, 0.5);
+        font-family: 'Geometria';
+    }
+    &.vrcard{
+        & .title {
+            left: 0;
+            transform: rotate(-90deg);
+            transform-origin: 0 0;
+            white-space: nowrap;
+            bottom: 0;
+        }
+    }
+}

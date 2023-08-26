@@ -1,0 +1,20 @@
+import React from 'react'
+import TasteMakers from '../../myComponents/tasteMakers/TasteMakers'
+import Ethos from '../../myComponents/ethos/Ethos'
+import Count from '../../myComponents/count/Count'
+
+
+const Home = () => {
+  return (
+    <>
+      <TasteMakers/>
+      <Ethos/>
+      <Count/>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eveniet repellat sequi officia totam iste esse, reprehenderit eius nisi porro magni ipsa, sunt, ea veniam. Cupiditate, consequatur. Provident architecto nobis ducimus dolorem ullam? Illo voluptatibus aliquam dolor veniam explicabo, dolorum animi nesciunt quidem velit dignissimos quod illum praesentium culpa eum numquam cumque quibusdam? Adipisci, laboriosam suscipit excepturi quaerat sunt, itaque omnis sapiente assumenda dignissimos molestiae aliquam autem veniam cum ratione doloremque sequi porro harum nihil vel iusto ipsa? Excepturi animi provident mollitia, inventore labore et ab ut tempore voluptatem in. Doloribus cumque unde nihil ex dicta pariatur obcaecati repellendus explicabo accusantium blanditiis, libero eum, accusamus quo tenetur aut voluptates autem aperiam consequuntur! Sunt quas eaque expedita rem hic atque aspernatur commodi beatae. Vero veniam eligendi aut nam asperiores animi odit dolorum adipisci delectus voluptate iure, reiciendis, blanditiis neque autem atque excepturi aperiam inventore! Placeat debitis architecto unde labore dolorum. Nesciunt, officia? Incidunt in, maxime quos eos magni soluta ea voluptatem expedita. Maiores voluptatibus iste incidunt ab unde provident in. Fuga doloribus veniam cumque. Nulla pariatur voluptates alias officia non aspernatur sit velit! Nam dignissimos fugit accusamus qui voluptatum quam quaerat, atque mollitia corporis doloremque rerum veritatis, natus id et delectus. Eos maxime dolorum doloribus velit atque deleniti eaque ipsa, quos adipisci consequuntur eveniet officiis unde rerum soluta esse perspiciatis voluptatibus, ipsum quaerat inventore voluptatem fuga debitis molestiae sequi? Vitae, provident tempora, harum minus nisi temporibus fuga dicta sequi nemo quod deserunt velit ab est excepturi nesciunt non sit facere ipsa inventore dolorem tenetur accusamus! Vero ipsam rem quas voluptas commodi excepturi est incidunt tempora sed explicabo error recusandae dolorum praesentium delectus nobis officiis tempore earum eum cupiditate quo deserunt, quos consectetur fuga. Perspiciatis adipisci ab ipsam totam explicabo, nulla, voluptates, repellendus dicta vero in tempore voluptatum fuga excepturi officia. Recusandae, cupiditate blanditiis iste amet magnam est quia eveniet vel repellat quibusdam corrupti ipsam vero? Repellendus, asperiores nemo voluptatum voluptatibus rerum aperiam aliquid magni exercitationem officiis neque qui, sint libero ducimus totam provident praesentium ratione inventore dolorum rem eos natus! Nisi velit officia molestias iusto distinctio cumque quae nihil repellendus sapiente excepturi tempora, iure dolore eveniet aliquam adipisci hic totam repellat. Amet expedita repellendus architecto molestiae vel, harum ratione illum ducimus odit blanditiis itaque, facere, accusamus iusto eveniet. Optio, porro asperiores cum dolorem eius sequi. Nihil impedit molestiae adipisci labore delectus ut eum debitis placeat, ducimus earum provident quidem doloremque, nemo iste assumenda accusamus. Suscipit impedit sit possimus sapiente. Suscipit error adipisci deleniti dignissimos, doloribus similique impedit cupiditate! Voluptates, sit ut odit atque magni eveniet reprehenderit numquam odio vitae, ipsam magnam distinctio quis. Itaque possimus tenetur quasi amet, laboriosam ipsa quos? Odio reiciendis adipisci eos labore optio voluptatum veniam, praesentium repudiandae! Eligendi ullam, dolor laborum veniam obcaecati debitis tenetur nisi, eius pariatur vero optio ut id amet inventore nam at recusandae ab deserunt quidem non fuga! Tempora quo ad atque eos beatae iste nam suscipit nobis maiores culpa? Dolorem dolorum neque, ut dignissimos eaque animi mollitia magnam accusamus aspernatur assumenda veniam?
+      </div>
+    </>
+  )
+}
+
+export default Home
