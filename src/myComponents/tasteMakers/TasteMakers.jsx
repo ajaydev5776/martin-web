@@ -2,7 +2,7 @@ import React from 'react'
 
 const TasteMakers = () => {
   return (
-    <div className="container-fluid py-5 tastemakerssection">
+    <div className="container-fluid py-5 mt-5 tastemakerssection">
       <div className="container innersection">
           <div className="row">
               <div className="col-lg-6 col-12 ms-auto">
