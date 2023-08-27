@@ -36,7 +36,7 @@ const MouseMoveEffect = ({ parentElement, text }) => {
 
   return (
     <>
-      {isInside && (
+      {isInside ? (
         <div
           id="cursor"
           className="custom-cursor"
@@ -49,7 +49,10 @@ const MouseMoveEffect = ({ parentElement, text }) => {
             </svg>
           </Link>
         </div>
-      )}
+      ) : <div
+      id="cursor"
+      className="roundCursor"
+      style={{ left: position.x, top: position.y }}></div>}
     </>
   );
 };

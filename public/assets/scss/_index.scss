@@ -35,6 +35,7 @@
         background: url(../img/facilitiesBack.jpg) no-repeat;
         background-position: center;
         background-size: cover;
+        min-height: 600px;
     }
 }
 // * That Count Section
@@ -44,10 +45,9 @@
 .gourmentsection {
     & .innerfluid {
         & .rightsdePopuo {
-            width: 17.5vw;
-            height: 11.493vw;
-            margin-top: -4vw;
+            margin-top: -80px;
             max-width: 330px;
+            max-height: 200px;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
             & span {
@@ -87,6 +87,53 @@
     }
 }
 // * gourmentsection
+
+
+// * memorableSection
+.memorableSection {
+    & .innerfluid {
+        background-color: lighten($theme2, 10);
+        & .contentSide {
+            & .accordions {
+                & .accordionItem {
+                    & .accordionButton {
+                        font-family: 'Geometria';
+                        font-size: 20px;
+                        border-bottom: 1px solid $theme2;
+                        & span {
+                            width: 30px;
+                            height: 30px;
+                            & img {
+                                filter: brightness(10);
+                                object-fit: contain;
+                                transform: rotate(-45deg);
+                                transition: all ease-in-out 0.3s;
+                            }
+                        }
+                    }
+                    &.active {
+                        & .accordionButton {
+                            & span {
+                                background: $white;
+                                & img {
+                                    filter: unset;
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .accordionsImg {
+                margin-right: -160px;
+                & img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+//  * memorableSection
 
 
 @include media-breakpoint(basic) {
@@ -169,6 +216,36 @@
 }
 // * gourmentsection
 
+// * memorableSection
+.memorableSection {
+    & .innerfluid {
+        & .contentSide {
+            & .accordions {
+                & .accordionItem {
+                    & .accordionButton {
+                        & span {
+                            & img {
+                            }
+                        }
+                    }
+                    &.active {
+                        & .accordionButton {
+                            & span {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .accordionsImg {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+//  * memorableSection
+
 }
 
 @include media-breakpoint-down(md) {
@@ -188,6 +265,39 @@
     }
 }
 // * gourmentsection
+
+// * memorableSection
+.memorableSection {
+    & .innerfluid {
+        & .contentSide {
+            & .accordions {
+                & .accordionItem {
+                    & .accordionButton {
+                        font-size: 18px;
+                        & span {
+                            width: 28px;
+                            height: 28px;
+                            & img {
+                            }
+                        }
+                    }
+                    &.active {
+                        & .accordionButton {
+                            & span {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .accordionsImg {
+            }
+        }
+    }
+}
+//  * memorableSection
+
 }
 
 @include media-breakpoint-down(sm) {
