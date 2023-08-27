@@ -1,4 +1,5 @@
 import React from 'react'
+import MouseMoveEffect from '../mouse/Mouse'
 
 const Ethos = () => {
   return (
@@ -16,6 +17,7 @@ const Ethos = () => {
             </div>
         </div>
     </div>
+    <MouseMoveEffect parentElement={'.ethosSection'} text="concept"/>
 </div>
   )
 }

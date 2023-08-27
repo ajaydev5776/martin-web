@@ -40,6 +40,55 @@
 // * That Count Section
 
 
+// * gourmentsection
+.gourmentsection {
+    & .innerfluid {
+        & .rightsdePopuo {
+            width: 17.5vw;
+            height: 11.493vw;
+            margin-top: -4vw;
+            max-width: 330px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            & span {
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background-color: $gray-300;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &:hover{
+                & span {
+                    &::before{
+                        top: 0;
+                    }
+                }
+            }
+        }
+        & .bottomSide {
+            & .content {
+                text-transform: capitalize;
+                font-size: 25px;
+                font-family: 'Geometria';
+                font-weight: 400;
+                color: rgba($black, 0.7)
+            }
+            & .subContent {
+                font-size: 22px;
+                color: $gray-400;
+            }
+        }
+    }
+}
+// * gourmentsection
+
+
 @include media-breakpoint(basic) {
 }
 @include media-breakpoint-up(sm) {}
@@ -58,6 +107,26 @@
 .textcontent ,  .sectionheading{
         font-size: 18px;
     }
+
+    // * gourmentsection
+.gourmentsection {
+    & .innerfluid {
+        & .rightsdePopuo {
+            & span {
+            }
+        }
+        & .bottomSide {
+            & .content {
+                font-size: 22px;
+            }
+            & .subContent {
+                font-size: 20px;
+            }
+        }
+    }
+}
+// * gourmentsection
+
 }
 
 @include media-breakpoint-down(xl) {}
@@ -66,7 +135,7 @@
 .textcontent ,  .sectionheading{
         font-size: 16px;
     }
-    // * ethosSection
+// * ethosSection
 .ethosSection {
     overflow: hidden;
     padding-right: 0px;
@@ -78,8 +147,64 @@
     }
 }
 // * ethosSection
+
+
+// * gourmentsection
+.gourmentsection {
+    & .innerfluid {
+        & .rightsdePopuo {
+            width: 35vw;
+            height: 22vw;
+            margin-top: -7vw;
+        }
+        & .bottomSide {
+            & .content {
+                font-size: 20px;
+            }
+            & .subContent {
+                font-size: 18px;
+            }
+        }
+    }
+}
+// * gourmentsection
+
 }
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    // * gourmentsection
+.gourmentsection {
+    & .innerfluid {
+        & .rightsdePopuo {
+        }
+        & .bottomSide {
+            & .content {
+                font-size: 18px;
+            }
+            & .subContent {
+                font-size: 16px;
+            }
+        }
+    }
+}
+// * gourmentsection
+}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+        // * gourmentsection
+.gourmentsection {
+    & .innerfluid {
+        & .rightsdePopuo {
+        }
+        & .bottomSide {
+            & .content {
+                font-size: 16px;
+            }
+            & .subContent {
+                font-size: 14px;
+            }
+        }
+    }
+}
+// * gourmentsection
+}

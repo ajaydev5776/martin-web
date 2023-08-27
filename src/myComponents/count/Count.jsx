@@ -19,7 +19,7 @@ const Count = () => {
         let ctx = gsap.context(() => {
           let panels = gsap.utils.toArray(".scrollCol");
           gsap.to(panels, {
-            xPercent: -100 * (panels.length - 1),
+            xPercent: -100 * (panels.length - 3),
             // ease: "none",
             scrollTrigger: {
               trigger: component.current,
@@ -27,7 +27,7 @@ const Count = () => {
               start: 'top -400',
               scrub: 1,
             //   snap: 1 / (panels.length - 1),
-              end: "+=3000",
+              end: "+=5000",
             //   markers: true
             }
           });
@@ -49,37 +49,37 @@ const Count = () => {
                 </div>
                 <div className="col-12" ref={slider}>
                     <div className="row align-items-center flex-nowrap gx-5">
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard">
                                 <div className="cardImg"><img src={slide1} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
                             </div>
                         </div>
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard vrcard">
                                 <div className="cardImg"><img src={slide2} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
                             </div>
                         </div> 
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard">
                                 <div className="cardImg"><img src={slide3} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
                             </div>
                         </div>
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard vrcard">
                                 <div className="cardImg"><img src={slide4} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
                             </div>
                         </div> 
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard">
                                 <div className="cardImg"><img src={slide5} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
                             </div>
                         </div>
-                        <div className="col-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard vrcard">
                                 <div className="cardImg"><img src={slide6} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
