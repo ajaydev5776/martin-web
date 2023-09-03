@@ -1,0 +1,516 @@
+// * partysection Start
+.partysection {
+    & .innerfluid {
+        background-color: lighten($theme2, 30);
+        & .partyname {
+            font-size: 22px;
+            font-family: 'Geometria';
+            &.methodheading {
+                font-family: 'LMRoman';
+            }
+        }
+        & .card{
+            & .card-body{
+                & .partylogo {
+                    height: 48px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
+            }
+            &::before{
+                content: '';
+                height: calc(100% + 150px);
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                border: 15px solid lighten($theme1, 40);
+            }
+        }
+    }
+}
+// * partysection End
+
+
+.contactSection {
+    & .contactCard {
+        background-color: $theme1;
+        // background-color: red;
+        & .contactContent {
+            // padding: 50px 30px;
+            & .textcontent {
+                font-family: 'Geometria';
+            }
+            & .formData {
+                gap:40px;
+                & .ContactInput {
+                    font-size: 16px;
+                    // color: $;
+                    // padding-bottom:;
+                    border: none;
+                    border-bottom:1px solid lighten($theme2, 5);
+                    outline: none;
+                    font-family: 'Geometria';
+                    &::placeholder {
+                        font-size: 16px;
+                        color: $white;
+                    }
+                    // & .star {
+                    //     color: $red;
+                    // }
+                }
+                & .textBox {
+                    // width: 45%;
+                    max-height: 170px;
+                    // resize: both;
+                    font-family: 'Geometria';
+                }
+                & .checkInput {
+                        height: 18px;
+                        background: transparent;
+                        min-width: 18px;
+                        max-width: 18px;
+                        border: 1.5px solid lighten($theme1, 30);
+                        transition: all 0.3s ease-in-out;
+                        outline: none;
+                    &:checked {
+                        background-color: $theme1;
+                        background-image: none;
+                        &::before {
+                            transform: translate(-25%, -55%) scale(1.2);
+                        }
+                    }
+                    // &::after {
+                    //     height: 20px;
+                    //     width: 20px;
+                    //     content: '';
+                    //     position: absolute;
+                    //     top: 0;
+                    //     z-index: 1;
+                    //     left: 0;
+                    //     border: 1.5px solid lighten($theme1, 15);
+                    //     transition: all 0.3s ease-in-out;
+                    // }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        background:url(../img/checktwo.svg) no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        height: 60%;
+                        width: 100%;
+                        z-index: 5;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                & .checkBtn {
+                    // padding-left: 20px;
+                    cursor: pointer;
+                }
+                & .scrollcontent {
+                    font-size: 14px;
+                    padding: 10px;
+                    height: 150px;
+                    font-family: 'Geometria';
+                }
+            }
+        }
+    }
+}
+
+// * Abous Us Section
+.aboutsection{
+    & .innerfluid {
+        background-color: lighten($theme2, 30);
+    }
+}
+
+
+// * treatmentsection
+
+.treatmentsection {
+    & .innerfluid {
+        & .productImg {
+
+        }
+    }
+}
+
+// * sliderSection
+.sliderSection {
+    & .cornicesImg {
+        & img {
+            // object-fit: cover;
+        }
+    }
+}
+
+// * Product List Name card 
+.cards-section {
+    & .inner-container {
+        & .card-box {}
+        & .text-card {
+            position: relative;
+            & .card {
+                & .card-body {
+                    background-color: rgb(215, 210, 204);
+                    & .text {
+                        position: absolute;
+                        top: 10px;
+                        right:10px;
+                        & span {
+                            font-size: 60px;
+                            line-height: 100%;
+                            color: $gray-200;
+                            font-weight: 300;
+                            font-family: "Geometria";
+                            text-align: right;
+                            writing-mode: tb;
+                            transform: rotate(180deg);
+                        }
+                    }
+                    & .content {
+                        transform: translateY(16px);
+                        & .bottom-text {
+                            font-size: 110px;
+                            line-height: 100%;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {
+    .wellnessection {
+        font-family: 'Geometria';
+        & .getheading {
+            font-size: 30px;
+        }
+        & .subheading {
+            font-size: 22px;
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {
+    // * sliderSection
+.sliderSection {
+    height: 100vh;
+    & .cornicesImg {
+        & img {
+            object-fit: cover;
+        }
+    }
+}
+
+}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .wellnessection {
+        & .getheading {
+            font-size: 28px;
+        }
+        & .subheading {
+            font-size: 20px;
+        }
+    }
+    // * partysection Start
+    .partysection {
+        & .innerfluid {
+            & .partyname {
+                font-size: 20px;
+            }
+            & .card{
+                & .card-body{
+                    & .partylogo {
+                        height: 35px;
+                        & img {
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    height: calc(100% + 120px);
+                }
+            }
+        }
+    }
+    // * partysection End
+
+    // * Product List Name card 
+    .cards-section {
+        & .inner-container {
+            & .card-box {}
+            & .text-card {
+                & .card {
+                    & .card-body {
+                        & .text {
+                            & span {
+                                font-size: 48px;
+                            }
+                        }
+                        & .content {
+                            transform: translateY(14px);
+                            & .bottom-text {
+                                font-size: 98px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .wellnessection {
+        & .getheading {
+            font-size: 25px;
+        }
+        & .subheading {
+            font-size: 18px;
+        }
+    }
+    // * partysection Start
+    .partysection {
+        & .innerfluid {
+            & .partyname {
+                font-size: 18px;
+            }
+            & .card{
+                margin-bottom: -5%;
+                & .card-body{
+                    & .partylogo {
+                        height: 25px;
+                        & img {
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    border-width: 10px;
+                    height: calc(100% + 0px);
+                }
+            }
+        }
+    }
+    // * partysection End
+
+    .contactSection {
+        & .contactCard {
+            background-color: $theme1;
+            // background-color: red;
+            & .contactContent {
+                // padding: 50px 30px;
+                gap: 30px;
+                & .formData {
+                    gap:30px;
+                    & .InputInner {
+                        gap: 30px;
+                    }
+                    & .ContactInput {
+                        &::placeholder {
+                        }
+                    }
+                    & .textBox {
+                    }
+                    & .checkInput {
+                        &:checked {
+                            &::before {
+                            }
+                        }
+                        &::before {
+                        }
+                    }
+                    & .checkBtn {
+                    }
+                    & .scrollcontent {
+                    }
+                    & .sendBtn {
+                    }
+                }
+            }
+        }
+    }
+
+    // * Product List Name card 
+    .cards-section {
+        & .inner-container {
+            & .card-box {}
+            & .text-card {
+                & .card {
+                    & .card-body {
+                        & .text {
+                            & span {
+                                font-size: 36px;
+                            }
+                        }
+                        & .content {
+                            transform: translateY(11px);
+                            & .bottom-text {
+                                font-size: 72px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .wellnessection {
+        & .getheading {
+            font-size: 22px;
+        }
+        & .subheading {
+            font-size: 16px;
+        }
+    }
+    // * partysection Start
+    .partysection {
+        & .innerfluid {
+            & .partyname {
+            }
+            & .card{
+                & .card-body{
+                    & .partylogo {
+                        & img {
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    border-width: 8px;
+                }
+            }
+        }
+    }
+    // * partysection End
+    
+    // * Product List Name card 
+    .cards-section {
+        & .inner-container {
+            & .card-box {}
+            & .text-card {
+                & .card {
+                    & .card-body {
+                        & .text {
+                            & span {
+                                font-size: 30px;
+                            }
+                        }
+                        & .content {
+                            transform: translateY(8px);
+                            & .bottom-text {
+                                font-size: 56px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .wellnessection {
+        & .getheading {
+            font-size: 20px;
+        }
+        & .subheading {
+            font-size: 14px;
+        }
+    }
+    // * partysection Start
+    .partysection {
+        & .innerfluid {
+            & .partyname {
+            }
+            & .card{
+                & .card-body{
+                    & .partylogo {
+                        & img {
+                        }
+                    }
+                }
+                &::before{
+                    content: '';
+                    border-width: 6px;
+                }
+            }
+        }
+    }
+    // * partysection End
+
+    // * Product List Name card 
+    .cards-section {
+        & .inner-container {
+            & .card-box {}
+            & .text-card {
+                & .card {
+                    & .card-body {
+                        & .text {
+                            & span {
+                                font-size: 24px;
+                            }
+                        }
+                        & .content {
+                            transform: translateY(5px);
+                            & .bottom-text {
+                                font-size: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    // * Product List Name card 
+    .cards-section {
+        & .inner-container {
+            & .card-box {}
+            & .text-card {
+                & .card {
+                    & .card-body {
+                        & .text {
+                            top: 6px;
+                            right: 6px;
+                            & span {
+                                font-size: 14px;
+                            }
+                        }
+                        & .content {
+                            
+                            transform: translateY(4px);
+                            & .bottom-text {
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

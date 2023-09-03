@@ -1,0 +1,32 @@
+.heroSection .lookText {
+  color: #EAE6E0;
+    font-size: 210px;
+    line-height: 160px;
+    font-weight: 300;
+    position: relative;
+    width: fit-content;
+}
+
+.heroSection .lookText span {
+  font-size: 35px;
+  color: #8C8279;
+  position: absolute;
+  line-height: 35px;
+  white-space: nowrap;
+  right: 0;
+  bottom: 0;
+}
+
+.heroSection .findText {
+  font-size: 90px;
+  line-height: 90px;
+  color: #EAE6E0;
+  font-weight: 300;
+}
+
+.heroSection .perfectText {
+  font-size: 110px;
+  line-height: 110px;
+  color: #8C8279;
+  font-weight: 300;
+}

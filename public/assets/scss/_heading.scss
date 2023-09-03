@@ -9,11 +9,26 @@
     &.experiences {
         font-family: 'LMRoman';
         & span{
-                font-family: 'Geometria';
+            font-family: 'Geometria';
         }
     }
 }
 
+.innerpageHeading {
+    font-size: 35px;
+    line-height: 120%;
+    font-family: 'Geometria';
+    font-weight: 300;
+    & span {
+        font-size: 25px;
+        font-family: 'LMRoman';
+        line-height: 100%;
+    }
+}
+.selfHeading {
+    font-size: 50px;
+    line-height: 120%;
+}
 
 @include media-breakpoint(basic) {
 }
@@ -41,9 +56,29 @@
 
 }
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .innerpageHeading {
+        font-size: 33px;
+        & span {
+            font-size: 22px;
+        }
+    }
+    .selfHeading {
+        font-size: 45px;
+    }
+}
 
 @include media-breakpoint-down(lg) {
+    .innerpageHeading {
+        font-size: 30px;
+        & span {
+            font-size: 20px;
+        }
+    }
+    .selfHeading {
+        font-size: 40px;
+    }
+    
 }
 
 @include media-breakpoint-down(md) {
@@ -53,6 +88,15 @@
             font-size: 30px;
         }
     }
+    .innerpageHeading {
+        font-size: 28px;
+        & span {
+            font-size: 18px;
+        }
+    }
+    .selfHeading {
+        font-size: 35px;
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -61,5 +105,14 @@
         & span {
             font-size: 20px;
         }
+    }
+    .innerpageHeading {
+        font-size: 25px;
+        & span {
+            font-size: 15px;
+        }
+    }
+    .selfHeading {
+        font-size: 30px;
     }
 }

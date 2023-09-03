@@ -16,12 +16,8 @@ const Gourment = () => {
 
     gsap.to(
       stickyChild,
-     // Start position (below the parent)
       { ease: 'none',
         position: 'sticky',
-        // top: -300,
-        // height: 300,
-         // End position (sticky at the top of the parent)
         scrollTrigger: {
           trigger: '.gourmentsection',
           start: 'top top',
@@ -30,18 +26,7 @@ const Gourment = () => {
           scrub: true, // Smooth scroll-based transition
         },
       }
-    );
-    // gsap.to('.firstContent', {
-    //   color: 'white',
-    //     scrollTrigger: {
-    //       trigger: '.firstParent',
-    //       start: 'top top',
-    //       endTrigger: parent,
-    //       end: 'bottom bottom',
-    //       delay: 3
-    //       // scrub: true,
-    //     }
-    // })
+    )
   }, []);
   return (
     <div className="gourmentsection  my-5  py-md-4" ref={parentRef}>

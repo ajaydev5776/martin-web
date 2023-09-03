@@ -1,15 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import { HOME_URL } from '../../routes/routeConstants'
 
-const Header = () => {
+const Header = ({setShowMenu}) => {
   return (
     <nav className="navbar navbar-expand bg-bodytertiary fixed-top">
     <div className="container-fluid px-lg-4">
-        <button className="shadow-none border-0 rounded-circle toggleBtn d-flex flex-column gap-1 overflow-hidden align-items-center justify-content-center">
+        <button onClick={()=> setShowMenu(true)} className="shadow-none border-0 rounded-circle toggleBtn d-flex flex-column gap-1 overflow-hidden align-items-center justify-content-center">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <a className="navbar-brand mx-md-4 ms-2 d-flex pb-0" href="#"><img src="assets/img/logo.svg" className="h-100" alt=""/></a>
+        <Link className="navbar-brand mx-md-4 ms-2 d-flex pb-0" to={HOME_URL}><img src="assets/img/logo.svg" className="h-100" alt=""/></Link>
         <div className="collapse navbar-collapse navtabs" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-md-flex d-none">
                 <li className="nav-item"><a className="nav-link pe-4 fw-semibold text-dark opacity-50 active" aria-current="page" href="#"><span className="d-inline-flex position-relative">german</span></a> </li>

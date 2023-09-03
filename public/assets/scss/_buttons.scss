@@ -3,6 +3,20 @@
     font-family: 'Geometria';
     color: $theme1;
     transition: all ease-in-out 0.3s;
+    &.downloadBtn{
+        & span {
+            & img {
+                transform: rotate(90deg);
+            }
+        }
+        &:hover{
+            & span {
+                & img {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
     & span {
         width: 10px;
         & img {
@@ -79,6 +93,13 @@
     }
 }
 
+.sendBtn {
+    font-size: 14px;
+    padding:0 12px;
+    height: 36px;
+    font-family: 'Geometria';
+}
+
 
 @include media-breakpoint(basic) {
 }
@@ -100,7 +121,42 @@
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .conceptBtn{
+        &.downloadBtn{
+            font-size: 12px;
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {
+    .conceptBtn {
+        & span {
+            & img {
+            }
+        }
+        &:hover{
+            & span {
+                & img {
+                }
+            }
+        }
+        &.borderdBtn {
+            &::after, &::before{
+            }
+            &:after{
+            }
+            &::before{
+                width: 79%;
+            }
+            &:hover{
+                &::before{
+                }
+                & span {
+                    & img {
+                    }
+                }
+            }
+        }
+    }
 }

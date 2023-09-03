@@ -7,8 +7,11 @@
 }
 .textcontent ,  .sectionheading{
     font-size: 22px;
-    line-height: 150%;
+    line-height: 170%;
     color: $theme1;
+    &.lorems{
+        font-family: 'Geometria';
+    }
 }
 .textcontent {
     opacity: 0.8;
@@ -45,12 +48,15 @@
 .gourmentsection {
     & .innerfluid {
         & .rightsdePopuo {
+            overflow: hidden !important;
             margin-top: -80px;
             max-width: 330px;
+            display: flex;
             max-height: 200px;
             overflow: hidden;
             transition: all 0.3s ease-in-out;
             & span {
+                width: 100%;
                 position: relative;
                 &::before{
                     content: '';
@@ -62,11 +68,25 @@
                     background-color: $gray-300;
                     transition: all 0.3s ease-in-out;
                 }
+                & img {
+                    // object-fit: cover;
+                }
             }
             &:hover{
                 & span {
                     &::before{
                         top: 0;
+                    }
+                }
+            }
+            &.innerPagesidePopup {
+                & .layar {
+                    background-color: $gray-300;
+                    z-index: 1;
+                }
+                & span {
+                    &::before{
+                        display: none;
                     }
                 }
             }

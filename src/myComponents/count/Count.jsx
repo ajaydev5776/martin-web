@@ -8,10 +8,12 @@ import slide5 from './../../Assets/images/slide5.jpg'
 import slide6 from './../../Assets/images/slide6.jpg'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Count = () => {
+    const navigate = useNavigate()
     const component = useRef();
     const slider = useRef();
 
@@ -27,7 +29,7 @@ const Count = () => {
               start: 'top -400',
               scrub: 1,
             //   snap: 1 / (panels.length - 1),
-              end: "+=5000",
+              end: "+=2500",
             //   markers: true
             }
           });
@@ -49,7 +51,7 @@ const Count = () => {
                 </div>
                 <div className="col-12" ref={slider}>
                     <div className="row align-items-center flex-nowrap gx-5">
-                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol">
+                        <div className="col-11 col-sm-10 col-md-7 col-lg-5 col-xl-4 scrollCol" onClick={()=> navigate('/service')}>
                             <div className="card rounded-0 border-0 shadow-none position-relative serviceCard">
                                 <div className="cardImg"><img src={slide1} className="w-100 h-100" alt=""/></div>
                                 <div className="title text-uppercase position-absolute"><span>Wellbeing</span></div>
