@@ -2,9 +2,17 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import HorizontalScroll from "./HorizontalScroll";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Gourment = () => {
+
+  useEffect(() => {
+    AOS.init();
+}, [])
     const parent = useRef();
     const child = useRef();
     const secChild = useRef();
@@ -93,7 +101,7 @@ const Gourment = () => {
                 </div>
                 <div className="col-12 mt-5 pt-md-5">
                     <div className="row py-lg-5">
-                        <div className="col-xl-6 col-lg-7 textcontent fs-2">Reconnect with your body and mind by booking a treatment with one of our expert massage therapists who are skilled in a vast range of methods and techniques to meet a wide variety of needs.</div>
+                        <div className="col-xl-6 col-lg-7 textcontent fs-2" data-aos="fade-up"  data-aos-duration="1000">Reconnect with your body and mind by booking a treatment with one of our expert massage therapists who are skilled in a vast range of methods and techniques to meet a wide variety of needs.</div>
                     </div>
                 </div>
             </div>

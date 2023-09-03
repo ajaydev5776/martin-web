@@ -5,11 +5,21 @@ const Contact = ()=> {
     <>
      <div className="container-fluid contactSection mb-5">
         <div className="container-lg">
-            <div className="contactCard pt-5 p-lg-4 p-md-3 p-2">
+            <div className="contactCard pt5 pb-lg-4 px-lg-4 px-md- px-2 pb-md-3 pb-2">
                 <div className="row mx-0">
                     <div className="col-lg-auto col-12 text-white px-lg-5">
                         {/* <div className="servicesText fs-4 mb-4">dining</div>  */}
-                        <div className="countHeading experiences text-uppercase d-flex flex-column  w-100 align-itemsend"><span className="d-flex justify-contentend">get your me time</span> BOOKED </div>
+                        <div className="countHeading experiences text-uppercase d-flex flex-column  w-100 align-itemsend"><span className="d-flex justify-contentend text-theme1 mt-sm-n5 mt-n4 pt-xl-1 pt-md-2 pt-sm-3 pt-1" data-aos="fade-up" data-aos-duration="1000">get your me time</span> 
+                        {/* BOOKED */}
+                        <div className='d-inline-flex'>
+                        <p className="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">B</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">O</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">O</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1100">K</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">E</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1300">D</p>
+                        </div>
+                        </div>
                     </div>
                     {/* <div className="countHeading col-12 text-white experiences text-uppercase d-flex flex-column  w-100 align-itemsend">BOOKED</div>  */}
                     <div className="col-12 p-lg-5 pb-3 mt-5">

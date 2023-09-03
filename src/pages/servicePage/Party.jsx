@@ -1,6 +1,12 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import HorizontalScroll from "./HorizontalScroll";
 
 const Party = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
     <div className="partysection my-5 py-lg-5 pt-4 pb-1">
         <div className="container-fluid innerfluid my-5 mt-lg-5 mt-0">

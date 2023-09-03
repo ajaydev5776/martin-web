@@ -1,6 +1,11 @@
-import React from 'react'
-
+import React ,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import HorizontalScroll from "./HorizontalScroll";
 const Method = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
   return (
     <>
     <div className="partysection my-5 py-lg-5">
@@ -28,7 +33,7 @@ const Method = () => {
         <div className="container-lg">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="textcontent lorems">To provide our guests with only the finest in science- based, professional skincare in Casa Angelina’s haven of wellness, we have partnered with award-winning skincare brand Augustinus Bader, renowned for their innovative products and treatments. Augustinus Bader has curated specific rituals that connect the guest with the Amalfi coast, using oils, salts, and other healing materials harvested from the destination.</div>
+                    <div className="textcontent lorems" data-aos="fade-up"  data-aos-duration="1000">To provide our guests with only the finest in science- based, professional skincare in Casa Angelina’s haven of wellness, we have partnered with award-winning skincare brand Augustinus Bader, renowned for their innovative products and treatments. Augustinus Bader has curated specific rituals that connect the guest with the Amalfi coast, using oils, salts, and other healing materials harvested from the destination.</div>
                 </div>
             </div>
         </div>

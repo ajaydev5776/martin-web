@@ -1,10 +1,15 @@
-import React,  {useState} from 'react'
+import React,  {useState,useEffect } from 'react'
 import './style.css'
 import acc1 from './../../Assets/images/acc3.jpg'
 import acc2 from './../../Assets/images/acc4.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// import HorizontalScroll from "./HorizontalScroll";
 
 const Accordian = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const [first , setFirst] = useState(true)
     const [second , setSecond] = useState(false)
     const [third , setThird] = useState(false)
@@ -27,17 +32,32 @@ const Accordian = () => {
 
   return (
     <div className="memorableSection  my-5 py-5 overflow-hidden">
-        <div className="container-fluid innerfluid py-5">
+        <div className="container-fluid innerfluid pb-5">
             <div className="container-lg">
                 <div className="row">
                     <div className="col-lg-auto col-12 text-white">
                         {/* <div className="servicesText fs-4 mb-4">dining</div>  */}
-                        <div className="countHeading experiences text-uppercase d-flex flex-column  w-100 align-itemsend"><span className="d-flex justify-contentend">memorable</span> experiences </div>
+                        <div className="countHeading experiences text-uppercase d-flex flex-column  w-100 align-itemsend mt-n5"><span className="d-flex justify-contentend text-theme1" data-aos="fade-up"  data-aos-duration="1000">memorable</span> 
+                        <div className='d-inline-flex'>
+                        <p className="" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">e</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">x</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">p</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1100">e</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">r</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1300">i</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1400">e</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1500">n</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1600">c</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1700">e</p>
+                        <p className="" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1800">s</p>
+                        </div>
+                        {/* experiences */}
+                        </div>
                     </div>
                     <div className="col-12 mt-5 pt-lg-5">
                         <div className="row contentSide">
                             <div className="col-lg-5 order-lg-1 order-2">
-                                <div className="accordions h-100">
+                                <div className="accordions h-100" data-aos="fade-up" data-aos-duration="1500">
                                     <div className={`accordionItem ${first ? 'active' : ''}`}>
                                         <div onClick={handleFirst} className="text-decoration-none accordionButton fw-medium text-white py-3 d-flex align-items-center justify-content-between">Chef on Board <span className="d-inline-flex rounded-circle p-2"><img src="assets/img/arrow.svg" className="w-100" alt="arrow"/></span></div>
                                         {first && (
