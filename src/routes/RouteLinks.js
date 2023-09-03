@@ -7,8 +7,8 @@ import Service from '../pages/servicePage/Service'
 const RouteLinks = () => {
   return (
     <Routes>
-      {/* <Route path={HOME_URL} element={<Home/>}/> */}
-      <Route path={HOME_URL} element={<Service/>}/>
+      <Route path={HOME_URL} element={<Home/>}/>
+      <Route path={SERVICE_URL} element={<Service/>}/>
     </Routes>
   )
 }
