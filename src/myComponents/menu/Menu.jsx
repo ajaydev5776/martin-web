@@ -4,6 +4,7 @@ import {SERVICE_URL} from './../../routes/routeConstants'
 
 const Menu = ({showMenu, setShowMenu}) => {
   return (
+    <>
     <div class={`offcanvas menuoffcanvas offcanvas-start bg-transparent border-0 ${showMenu ? 'show' : ''}`} data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
         <div className="rounded-3 m-3 innerbodyPart h-100 overflow-hidden">
             <div className="row flex-column flex-nowrap  h-100">
@@ -43,6 +44,10 @@ const Menu = ({showMenu, setShowMenu}) => {
             </div>
         </div>
     </div>
+    {showMenu && (
+        <div className="offcanvas-backdrop fade show"></div>
+    )}
+    </>
   )
 }
 
