@@ -1,22 +1,31 @@
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import './App.css';
 import Homepage from './Components/Homepage/Homepage';
 import RouteLinks from './routes/RouteLinks';
 import { useLocation } from 'react-router-dom';
+import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 
 function App() {
-  const location = useLocation();
+//   const location = useLocation();
 
-  useEffect(()=> {
-    window.scrollTo(0,0)
-}, [location])
+//   useEffect(()=> {
+//     window.scrollTo(0,0)
+// }, [location])
+
+const ref = useRef(null);
+
+const options = {
+  smooth: true,
+}
   return (
     // <div className="App">
     //   <Homepage/>
     // </div>
     <>
+    {/* <LocomotiveScrollProvider options={options} containerRef={ref}> */}
       <RouteLinks/>
+    {/* </LocomotiveScrollProvider> */}
     </>
   );
 }

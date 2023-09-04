@@ -4,7 +4,7 @@ import { HOME_URL } from '../../routes/routeConstants'
 
 const Header = ({setShowMenu}) => {
   return (
-    <nav className="navbar navbar-expand bg-bodytertiary fixed-top">
+    <nav className="navbar navbar-expand bg-bodytertiary fixed-top" style={{height: '50px'}}>
     <div className="container-fluid px-lg-4">
         <button onClick={()=> setShowMenu(true)} className="shadow-none border-0 rounded-circle toggleBtn d-flex flex-column gap-1 overflow-hidden align-items-center justify-content-center">
             <span></span>

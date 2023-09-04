@@ -24,14 +24,52 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script>
+
+      window.onpageshow = function(event) {
+        if (event.persisted) {
+        window.location.reload();
+        }
+     };
+ 
+     function is_touch_enabled() {
+         return ( 'ontouchstart' in window ) ||
+              ( navigator.maxTouchPoints > 0 ) ||
+              ( navigator.msMaxTouchPoints > 0 );
+     }		
+ 
+     
+     var scrollLayer;
+     var current = 'index';
+     var lang = 'en';
+     var isMobile = window.innerWidth <= 960;
+     var isTouchEnabled = is_touch_enabled();
+ 
+     if(isTouchEnabled) {
+       window.document.getElementsByTagName( 'html' )[0].classList.add('is-touch');
+     }
+ 
+     if(isMobile) {
+       window.document.getElementsByTagName( 'html' )[0].classList.add('is-mobile');
+     }
+
+     
+   </script>
+ 
+    <script src="assets/jquery.min3088.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/stylef801.css">
+    <script src="assets/ls8603.js"></script>
+    <script src="assets/imagesLoadededa1.js"></script>
+    <script src="assets/day320d.js"></script>
+    <script src="assets/commonsf801.js"></script>
     <style>
-      html {
+      /* html {
         scroll-behavior: smooth;
-      }
+      } */
     </style>
     <base href="/">
     <title>React App</title>

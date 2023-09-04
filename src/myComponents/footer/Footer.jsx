@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="footer mt-5">
+    <div className="footer mt-5" data-scroll-section>
         <div className="container-fluid innerfluid py-5 ">
             <div className="container">
                 <div className="row">
