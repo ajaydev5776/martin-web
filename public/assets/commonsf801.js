@@ -1321,7 +1321,7 @@ $(document).ready(function(){
 	
 	$('#bookNow').on('click',function(){
 		openOverlay($('#bookOverlay'));
-		ga('send', 'event', 'Click', 'Book Now', 'Click su bottone Book Now');
+		// ga('send', 'event', 'Click', 'Book Now', 'Click su bottone Book Now');
 	})
 	
 	$('.credits').on('click',function(){
@@ -1345,25 +1345,25 @@ $(document).ready(function(){
 	var $today = $reopening > new Date() ? $reopening : new Date();
 	var $tomorrow = new Date($today).setDate($today.getDate()+1)
 	
-	var bookArrival = $('.bookArrival input').flatpickr({
-		mode: "single",
-		minDate: "today",
-		dateFormat: lang == "en" ? "m/d/y" : "d/m/y",
-		locale: lang,
-		defaultDate: $today,
-		onChange: function(selectedDates, dateStr, instance) {
-			$suggestedDeparture = new Date(selectedDates[0]).setDate(selectedDates[0].getDate()+1)
-			bookDeparture.setDate($suggestedDeparture);
-	    },
-	});
+	// var bookArrival = $('.bookArrival input').flatpickr({
+	// 	mode: "single",
+	// 	minDate: "today",
+	// 	dateFormat: lang == "en" ? "m/d/y" : "d/m/y",
+	// 	locale: lang,
+	// 	defaultDate: $today,
+	// 	onChange: function(selectedDates, dateStr, instance) {
+	// 		$suggestedDeparture = new Date(selectedDates[0]).setDate(selectedDates[0].getDate()+1)
+	// 		bookDeparture.setDate($suggestedDeparture);
+	//     },
+	// });
 	
-	var bookDeparture = $('.bookDeparture input').flatpickr({
-		mode: "single",
-		minDate: "today",
-		dateFormat: lang == "en" ? "m/d/y" : "d/m/y",
-		locale: lang,
-		defaultDate: $tomorrow
-	});
+	// var bookDeparture = $('.bookDeparture input').flatpickr({
+	// 	mode: "single",
+	// 	minDate: "today",
+	// 	dateFormat: lang == "en" ? "m/d/y" : "d/m/y",
+	// 	locale: lang,
+	// 	defaultDate: $tomorrow
+	// });
 
 	
 	
