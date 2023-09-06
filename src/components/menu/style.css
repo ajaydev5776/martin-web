@@ -1,0 +1,13 @@
+/* nav.active {
+  display: none !important;
+} */
+
+@media screen and (max-width: 960px){
+  .navscrollermobile {
+    transform: unset !important;
+  }
+  
+  .navscrollermobile .navItem{
+    padding: 0px 4px 4px 4px;
+  }
+}

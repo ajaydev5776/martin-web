@@ -838,55 +838,55 @@ $(document).ready(function(){
 	
 	/* WP-FORMS COMPATIBILITY WITH LOCOMOTIVE SCROLL SNIPPET - Alberto "DeLiVeRaNcE" Oliva 2021*/
 	
-	if($('.wpforms-form').length > 0){
-		if($('.wpforms-datepicker').length > 0){
-			jQuery('.wpforms-datepicker-wrap')[0]._flatpickr.config.onOpen.push(function(){
-				 scrollLayer.stop();
-			})
+	// if($('.wpforms-form').length > 0){
+	// 	if($('.wpforms-datepicker').length > 0){
+	// 		jQuery('.wpforms-datepicker-wrap')[0]._flatpickr.config.onOpen.push(function(){
+	// 			 scrollLayer.stop();
+	// 		})
 			
-			jQuery('.wpforms-datepicker-wrap')[0]._flatpickr.config.onClose.push(function(){
-				 scrollLayer.start();
-			})
-		}
+	// 		jQuery('.wpforms-datepicker-wrap')[0]._flatpickr.config.onClose.push(function(){
+	// 			 scrollLayer.start();
+	// 		})
+	// 	}
 		
-		if($('.wpforms-timepicker').length > 0){
-			jQuery('.wpforms-timepicker').timepicker().on('hideTimepicker',function(e){
-				scrollLayer.start();
-			})
+	// 	if($('.wpforms-timepicker').length > 0){
+	// 		jQuery('.wpforms-timepicker').timepicker().on('hideTimepicker',function(e){
+	// 			scrollLayer.start();
+	// 		})
 			
-			jQuery('.wpforms-timepicker').timepicker().on('showTimepicker',function(){
-				 scrollLayer.stop();
-			})
-		}
+	// 		jQuery('.wpforms-timepicker').timepicker().on('showTimepicker',function(){
+	// 			 scrollLayer.stop();
+	// 		})
+	// 	}
 		
-		$('.wpforms-disclaimer-description').on('mouseover touchstart',function(){
-			scrollLayer.stop();
-		}).on('mouseout touchend',function(){
-			scrollLayer.start();
-		})
+	// 	$('.wpforms-disclaimer-description').on('mouseover touchstart',function(){
+	// 		scrollLayer.stop();
+	// 	}).on('mouseout touchend',function(){
+	// 		scrollLayer.start();
+	// 	})
 				
-		window.wpforms.scrollToError = function(){};
-		window.wpforms.animateScrollTop = function(){};
+	// 	window.wpforms.scrollToError = function(){};
+	// 	window.wpforms.animateScrollTop = function(){};
 		
 		
 		
 		
-		var waitForFormSuccess;
+	// 	var waitForFormSuccess;
 		
-		$('.formContainer .wpforms-submit').on('click',function(){
-				clearInterval(waitForFormSuccess);
-				waitForFormSuccess = setInterval(function(){
-					if(!$('.formContainer .wpforms-form').length){
-						clearInterval(waitForFormSuccess);
-						scrollLayer.update();
-						scrollLayer.scroll.checkScroll(true);
-						scrollLayer.scrollTo('#detailForm');							
-					}
-				},50)
-		})
+	// 	$('.formContainer .wpforms-submit').on('click',function(){
+	// 			clearInterval(waitForFormSuccess);
+	// 			waitForFormSuccess = setInterval(function(){
+	// 				if(!$('.formContainer .wpforms-form').length){
+	// 					clearInterval(waitForFormSuccess);
+	// 					scrollLayer.update();
+	// 					scrollLayer.scroll.checkScroll(true);
+	// 					scrollLayer.scrollTo('#detailForm');							
+	// 				}
+	// 			},50)
+	// 	})
 		
 		
-	}
+	// }
 	
 	/*********************************************************************************/
 	

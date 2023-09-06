@@ -1,0 +1,42 @@
+/* .overlay.active {
+  display: none !important;
+} */
+
+.overlayContainer input:focus-visible{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fffefc99;
+}
+.overlayContainer input{
+  
+  border: none;
+  border-bottom: 1px solid #fffefc99;
+  outline: none;
+
+}
+.overlayContainer input:-webkit-autofill, .overlayContainer input::-webkit-autofill:hover, .overlayContainer input::-webkit-autofill:focus{
+  -webkit-text-fill-color: #D7D2CB;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-background-origin: unset;
+  caret-color: #D7D2CB;
+}
+/* &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+      -webkit-text-fill-color: #B2B6C5;
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-background-origin: unset;
+      caret-color: #B2B6C5;
+  } */
+
+@media screen and (max-width: 960px){
+  .overlayContainer .ovGroup:after{
+    display: none;
+  }
+  .overlayContainer{
+    max-width: 768px;
+  }
+  .overlayContainer .ovGroup label{
+    width: 100%;
+  }
+}
